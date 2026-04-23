@@ -45,11 +45,11 @@ Controller → Service → Repository → Database
 ### Login Response (JWT Token)
 ![Login](./screenshots/Login.jpeg)
 
-### Add User
-![Add User](./screenshots/Add User.jpeg)
+### Add_User
+![Add_User](./screenshots/Add User.jpeg)
 
-### Users List
-![Users List](./screenshots/User List.jpeg)
+### Users_List
+![Users_List](./screenshots/User List.jpeg)
 
-### Get User By ID
-![Get User By ID](./screenshots/Get User By ID.jpeg)
+### Get_User_By_ID
+![Get_User_By_ID](./screenshots/Get User By ID.jpeg)
