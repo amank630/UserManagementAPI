@@ -1,5 +1,7 @@
 # User Management API (.NET)
 
+![.NET CI](https://github.com/amank630/UserManagementAPI/actions/workflows/dotnet.yml/badge.svg)
+
 ## Features
 - User Registration & Login
 - JWT Authentication
