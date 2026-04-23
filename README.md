@@ -36,3 +36,20 @@ Controller → Service → Repository → Database
 - Docker deployment
 - POST /api/user/login
 - GET /api/user (Protected)
+
+## Screenshots
+
+### Swagger UI
+![Swagger](./screenshots/UserManagementAPI.jpeg)
+
+### Login Response (JWT Token)
+![Login](./screenshots/Login.jpeg)
+
+### Add User
+![Add User](./screenshots/Add User.jpeg)
+
+### Users List
+![Users List](./screenshots/User List.jpeg)
+
+### Get User By ID
+![Get User By ID](./screenshots/Get User By ID.jpeg)
