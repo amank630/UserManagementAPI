@@ -43,7 +43,7 @@ namespace User_Management_API.Services
             {
                 Name = registerdto.Name,
                 Email = registerdto.Email,
-                Password = registerdto.Password,
+                Password = BCrypt.Net.BCrypt.HashPassword(registerdto.Password),
                 Phone=registerdto.Phone
             };
             await _repository.AddAsync(user);
@@ -58,13 +58,11 @@ namespace User_Management_API.Services
 
         public async Task<string?> LoginAsync(LoginDto loginDto)
         {
-            var users = await _repository.GetAllAsync();
-            var user = users.FirstOrDefault(u =>
-                u.Email == loginDto.Email &&
-                u.Password == loginDto.Password);
-
-            if (user == null)
+            var user = await _repository.GetByEmailAsync(loginDto.Email);
+            
+            if (user == null || !BCrypt.Net.BCrypt.Verify(loginDto.Password, user.Password))
                 return null;
+            
                 
             return _tokenService.GenerateToken(user);
         }

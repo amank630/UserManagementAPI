@@ -28,7 +28,11 @@ namespace User_Management_API.Repositories
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
         }
-        
+
+        public async Task<User?> GetByEmailAsync(string email)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+        }
 
     }
 }
