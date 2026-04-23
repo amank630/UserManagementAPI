@@ -46,10 +46,10 @@ Controller → Service → Repository → Database
 ![Login](./screenshots/Login.jpeg)
 
 ### Add_User
-![Add_User](./screenshots/Add User.jpeg)
+![Add_User](./screenshots/Add_User.jpeg)
 
 ### Users_List
-![Users_List](./screenshots/User List.jpeg)
+![Users_List](./screenshots/Users_List.jpeg)
 
 ### Get_User_By_ID
-![Get_User_By_ID](./screenshots/Get User By ID.jpeg)
+![Get_User_By_ID](./screenshots/Get_User_By_ID.jpeg)
