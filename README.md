@@ -22,5 +22,17 @@
 
 ## API Endpoints
 - POST /api/user/register
+
+## Architecture
+Controller → Service → Repository → Database
+
+## Security
+- JWT Authentication
+- Password Hashing (BCrypt)
+
+## Future Improvements
+- Role-based authorization
+- Refresh tokens
+- Docker deployment
 - POST /api/user/login
 - GET /api/user (Protected)
